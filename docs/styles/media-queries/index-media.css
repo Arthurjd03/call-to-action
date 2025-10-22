@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.3rem;
+  }
+  .second-title {
+    font-size: 2.3rem;
+  }
+  .fraction {
+    padding: 40px 20px;
+    border-radius: 20px;
+  }
+  .fraction h2 {
+    font-size: 2.3em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards {
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+  }
+}

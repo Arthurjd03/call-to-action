@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscrição - Curso Introdutório</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/media-queries/form-media.css" />
+  </head>
+  <body>
+    <main class="form-layout">
+      <div class="welcome-left">
+        <h1 class="welcome-title">Seja bem-vindo!</h1>
+        <p id="subText" class="welcome-text fade-text" ></p>
+      </div>
+      <section class="form-layout-right">
+        <section class="form-section">
+          <h2 class="form-title">Garanta sua vaga gratuitamente</h2>
+          <p class="form-description">
+            Preencha o formulário abaixo para se inscrever no curso introdutório
+            de
+            <strong>HTML, CSS e JavaScript</strong> e dar seus primeiros passos
+            como desenvolvedor(a).
+          </p>
+          <form class="form" fetch() method="POST">
+            <div class="form-group">
+              <label for="name" class="form-label">Seu nome completo</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Seu e-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="level" class="form-label"
+                >Nível de conhecimento</label
+              >
+              <select id="level" name="level" class="form-select" required>
+                <option value="">Selecione...</option>
+                <option value="iniciante">Iniciante</option>
+                <option value="intermediario">Intermediário</option>
+                <option value="avancado">Avançado</option>
+              </select>
+            </div>
+            <small class="form-privacy">🔒 Seus dados estão protegidos.</small>
+            <button type="submit" class="form-button">
+              Quero me inscrever agora
+            </button>
+          </form>
+        </section>
+      </section>
+    </main>
+    <script src="js/form.js" defer></script>
+  </body>
+</html>
